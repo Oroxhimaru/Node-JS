@@ -9,6 +9,26 @@ const server = http.createServer((req, res) => {   //req : request , res : respo
 
      // routing
   let path = './views/';
+  switch(req.url) {
+    case '/':
+        path += 'Registration form.html';
+        res.statusCode = 200;
+        break;
+    case '/about':
+       path += 'about.html';
+       res.statusCode = 200;
+       break;
+    case '/about-me':
+       res.statusCode = 301; //301 mean page has been moved
+       res.setHeader('Location', '/about');
+       res.end();
+       break;    
+        
+    default:
+        path += '404.html';
+        res.statusCode = 404;
+        break;   //pass the path in readfile   
+  }
 
 /*
      //set header content type
@@ -19,7 +39,7 @@ const server = http.createServer((req, res) => {   //req : request , res : respo
 
 
      // send html file
-     fs.readFile('./views/Registration form.html', (err, data) => {
+     fs.readFile(path /*'./views/Registration form.html' */, (err, data) => {
         if (err) {
             console.log(err);
             res.end();
