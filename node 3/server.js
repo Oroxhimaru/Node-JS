@@ -1,12 +1,25 @@
 const http = require('http');
 const fs = require('fs');
+const _ = require('lodash'); //calling lodash
 
 //it is not necessary to store this in variable, but in case you want to use it in future.
 const server = http.createServer((req, res) => {   //req : request , res : respond
      // console.log('request made'); after running the listen() below run this console
      // console.log(req); second time try this
-     console.log(req.url, req.method);
+     // console.log(req.url, req.method);
 
+     //lodash
+      const num = _.random(0, 20);
+      console.log(num); 
+
+     const greet = _.once(() => {
+        console.log("Hello, Gintoki");
+     });
+
+     greet(); //calling out function
+     
+
+     
      // routing
   let path = './views/';
   switch(req.url) {
@@ -18,7 +31,7 @@ const server = http.createServer((req, res) => {   //req : request , res : respo
        path += 'about.html';
        res.statusCode = 200;
        break;
-    case '/about-me':
+    case '/about-us':
        res.statusCode = 301; //301 mean page has been moved
        res.setHeader('Location', '/about');
        res.end();
