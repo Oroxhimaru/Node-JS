@@ -20,3 +20,13 @@
 # mongoose 
 1. mongoose is an object document mapping library
 2. npm install mongoose
+
+# request
+1. GET request to get a resources
+2. POST request to create a new data 
+3. DELETE request to delete data 
+4. PUT requests to update data 
+
+# mvc 
+1. model , view , controller
+2.  way of structuring our code and files
