@@ -7,9 +7,9 @@ to make website more usable and purposeful for the user e.g a front-end download
   nodejs , mongodb,  mongoose, expressjs.
 4. install node js and download from here https://nodejs.org/en/download.
    installing means copying the files into our specify computer directory.
-5. for exporting any file you need to use this code ' module.exports = whatever you exporting; ' module is object and exports is the property of module object. (this code is mention in dummy.js with 5 as a comment)
-6. for importing any file form other script file you need to use require('exporting the file here ./') which is a function. (this code is mention in details.js with 6 as a comment)
-7. for exporting two file ' module.exports = {first: , second:  }; ' (this code is mention in dummy.js with 7 as a comment)  
+5. for exporting any file you need to use this code ' module.exports = whatever you exporting; ' module is object and exports is the property of module object. (this code is mention in export.js with 5 as a comment)
+6. for importing any file form other script file you need to use require('exporting the file here ./') which is a function. (this code is mention in import.js with 6 as a comment)
+7. for exporting two file ' module.exports = {first: , second:  }; ' (this code is mention in export.js with 7 as a comment)  
 8. node js is a runtime javascript enviroment, which is also use for backend. node js is a c++ code which is taken from chrome browser v8 engine code. and c++ code is wrap in JS code. which allows us  to write JS code and it accept that code and make server on the basis of c++. when we write js code in nodejs it give code to wrapper which share our js code into c++ code which will create a server by the help of v8 engine code.
 9. for running the code on node js press ctrl + tilde (tilde = ~`` key) button of keyboard or go to ... then terminal then new terminal. for running the code either write node filename or install nodemon and write nodemon filename.
 10. for further about import and export go to node 2 folder. or import export folder in this file
@@ -17,4 +17,12 @@ to make website more usable and purposeful for the user e.g a front-end download
 12. express is a framework for nodeJS. express is use for routing . routing means when we visit main website secondary page like www.wwe.com/batista /batista is routing. route is /url. routing type GET ,POST other are PUT, PATCH ,DELETE many more.  we use GET route when we don't care  if data is seen on url, and use POST route when we don't want to show data on url. (see code in express.js 12 comment)
 13. npm i nodemon -g for one time installation and it will run file continously and update it time to time, for cancel the file press ctrl + c. for running the nodemon write nodemon filename , if you see error then write npx nodemon filename.
 14. the process between the request and route is middleware. middleware is a function which run before route, means before route if you want to do something then use middleware which is app.use() (see code in middleware.js 14 comment) we can make as many middleware as we want.
+15. we  make server with node's http method but it is difficult and long so therefore we use express which is a framework or package of node js which help us to create server in short code
+16. when a user go the url wwe.com/undertaker that /undertaker is route and request  will come go through the process like middleware then match with the route in server and then will give the response of whatever the logic is define in it
+17. the process of making routes known as routing
+18. dynamic routing /profile/ when half is same and half is chaning again and again then we use dynamic routiing by putting : colon like /profile/:username / username is a parameter here params store in request so req.params.whatever
+19. ejs : npm i ejs , for configuration app.set("view engine", "ejs"); , make folder 'views' , made ejs file in it , instead of send, render it.
+20. template engine like ejs is a style of markup which give you html, can add dynamic value like that res.render('contact', {move: 'BANKAI'}); and in ejs file <h1><%=move %></h1>
+21. static file setup: public folder under three more folder like images, stylesheets, javascripts. then configure it , understand the path.
+22. error handling see the code in /* error handling */ we have to through error in error handler and then error goes to handler get store in name error and then whereever we have to show that error we will name it error, like in ejs file <%+ error %>
 

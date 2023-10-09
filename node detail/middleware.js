@@ -4,7 +4,7 @@ const app = express()
 /* 14 */
 app.use(function(req, res, next) {
     console.log('uchiha itachi');
-    next(); //next is necessary for pushing our code not to stuuk on middleware
+    next(); //next is necessary for pushing our code not to stuck on middleware
 });
 
 app.use(function(req, res, next) {
