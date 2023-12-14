@@ -9,7 +9,7 @@ to make website more usable and purposeful for the user e.g a front-end download
    installing means copying the files into our specify computer directory.
 5. for exporting any file you need to use this code ' module.exports = whatever you exporting; ' module is object and exports is the property of module object. (this code is mention in export.js with 5 as a comment)
 6. for importing any file form other script file you need to use require('exporting the file here ./') which is a function. (this code is mention in import.js with 6 as a comment)
-7. for exporting two file ' module.exports = {first: , second:  }; ' (this code is mention in export.js with 7 as a comment)  
+7. for exporting two file ' module.exports = {first: , second:  }; ' (this code is mention in export.js with 7 as a comment)
 8. node js is a runtime javascript enviroment, which is also use for backend. node js is a c++ code which is taken from chrome browser v8 engine code. and c++ code is wrap in JS code. which allows us  to write JS code and it accept that code and make server on the basis of c++. when we write js code in nodejs it give code to wrapper which share our js code into c++ code which will create a server by the help of v8 engine code.
 9. for running the code on node js press ctrl + tilde (tilde = ~`` key) button of keyboard or go to ... then terminal then new terminal. for running the code either write node filename or install nodemon and write nodemon filename.
 10. for further about import and export go to node 2 folder. or import export folder in this file
@@ -24,5 +24,15 @@ to make website more usable and purposeful for the user e.g a front-end download
 19. ejs : npm i ejs , for configuration app.set("view engine", "ejs"); , make folder 'views' , made ejs file in it , instead of send, render it.
 20. template engine like ejs is a style of markup which give you html, can add dynamic value like that res.render('contact', {move: 'BANKAI'}); and in ejs file <h1><%=move %></h1>
 21. static file setup: public folder under three more folder like images, stylesheets, javascripts. then configure it , understand the path.
-22. error handling see the code in /* error handling */ we have to through error in error handler and then error goes to handler get store in name error and then whereever we have to show that error we will name it error, like in ejs file <%+ error %>
+22. error handling see the code in /* error handling */ in exp.js we have to through error in error handler and then error goes to handler get store in name error and then whereever we have to show that error we will name it error, like in ejs file <%= error %> find error handling detail on express error handling npm, "line 18,19,20,21,22 code mention in express-about folder.
+23. revision folder revise thing for now.
+24. with the help of express generator you can get a boiler plate of express js 
+25. steps to use express generator, install one time globally, npm i express-generator -g, now for creating open cmd write express appname --view=ejs, then use commands cd appname and npm i  . for running the application write in terminal npx nodemon.  (go to express-generator folder for example)
+26. mongodb is a database. database means a base where data are stored of applications. 
+27.  mainly there are two types of data, relational like mySQL or SQL, no relational means noSQl like mongodb
+28. in code side  when we do database setup that means we have build database formation in mongodb side , similarly in code side Model build collection in mongodb side, schema -> documents. see in mongodb-database folder.
+29. every app data you can store in mongodb storage but you will store it seperatly each app in different container.
+30. varaity of data is called collection made by code of model. Apps all data is database in that DB different set of data is collection, and in collection small  data is documents which is made with code of schema.
+31. install the mongodb by visiting the website https://www.mongodb.com/try/download/community visit package download it. npm i mongoose for installing mongoose in terminal. code of mongoose = const mongoose = require("mongoose"); 
+32. see code mongodb-database folder in user.js file
 

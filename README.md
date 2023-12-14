@@ -37,3 +37,7 @@ It's important to note that while Node.js optimizes JavaScript execution, it doe
 ## Learning NodeJS by code
  you can learn node js by following this repo https://github.com/Oroxhimaru/Node-JS , learn it one by one folder.
  I am learning node js by net ninja node js course on youtube.
+
+
+ ## best detail and summary of node js
+ go to node detail folder and go thorugh the readme file iin node detail folder. plus check and go through the code in different file and folder under node detail.

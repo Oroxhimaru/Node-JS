@@ -7,7 +7,7 @@ app.use((req, res, next) => {
 });   //run before any routes which have receive request , plus use(function) always require function in it
     
 /* static configuration */
-app.use(express.static("./public"));
+app.use(express.static("./public")); //this public folder should be your root folder means vs code should be open in express-about folder not node details  other wise public folder will not run.
 
 /* ejs configuration */
 app.set("view engine", "ejs");
