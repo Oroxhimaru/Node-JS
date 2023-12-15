@@ -34,5 +34,11 @@ to make website more usable and purposeful for the user e.g a front-end download
 29. every app data you can store in mongodb storage but you will store it seperatly each app in different container.
 30. varaity of data is called collection made by code of model. Apps all data is database in that DB different set of data is collection, and in collection small  data is documents which is made with code of schema.
 31. install the mongodb by visiting the website https://www.mongodb.com/try/download/community visit package download it. npm i mongoose for installing mongoose in terminal. code of mongoose = const mongoose = require("mongoose"); 
-32. see code mongodb-database folder in user.js file
-
+32. see code mongodb-database folder in user.js file. and in index.js contain creattion of data, finding of or selected finding of data plus deleting of specific data.
+33. client is browser or frontend part and server is backend like node js both are working on your pc at the time of production, which is known as localhost.
+34. client have cookie , server have session
+35. cookie and session both save data, session save data in server and cookie in client.
+36. you need a package to deal with session express-session, npm i express-session.
+37.  see code of session in app.js, ignore other code just focus on session comments are written there.  first import express-session then setup the session with app.use() in app.js file, then create session in another file.
+38. now cookies is already setup in app.js file by express generator. see in app.js comment 4  and comment 30.
+39. see the code of cookie in databae folder index.js.

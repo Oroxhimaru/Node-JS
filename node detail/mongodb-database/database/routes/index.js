@@ -6,6 +6,7 @@ const userModel = require("./users");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  res.cookie('age', 24); //(name, value)we have send the data to browser, now for reading this cookie go down in cookie section 
   res.render('index', { title: 'Express' });
 });
 
@@ -30,6 +31,33 @@ router.get("/allusers", async function (req,res) {  //findOne use to call only o
   let allusers = await userModel.findOne({username: "M HASSAN MALIK"});
   res.send(allusers);
 }); 
+
+
+//for deleting the data
+/*
+router.get("/delete", async function (req,res) {
+  let deleteUser = await userModel.findOneAndDelete({
+    username: "M HASSAN MALIK"
+  });
+  res.send(deleteUser);
+});
+*/  
+
+
+//cookies code here go to the comment above /* GET home page. */
+//read of cookies
+router.get('/readCookies', function(req, res, next) {
+  console.log(req.cookies); //we write req here coz data is coming from browser
+  console.log(req.cookies.age);
+  res.send("cookies here");
+});
+
+router.get('/deleteCookies', (req,res) => {
+  res.clearCookie('age'); //writing response coz we deleteing the data of browser
+  res.send('delete cookie');
+});
+
+
 
 
 module.exports = router;
