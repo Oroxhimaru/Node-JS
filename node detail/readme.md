@@ -42,3 +42,10 @@ to make website more usable and purposeful for the user e.g a front-end download
 37.  see code of session in app.js, ignore other code just focus on session comments are written there.  first import express-session then setup the session with app.use() in app.js file, then create session in another file.
 38. now cookies is already setup in app.js file by express generator. see in app.js comment 4  and comment 30.
 39. see the code of cookie in databae folder index.js.
+40. flash messages: they are more like good looking alerts, warning and descriptions. when we have top give info to some ejs pages that is flash mesaages.
+41. after filling  the wrong info in Logiin form the req goes to backend server. and if the email pass is wrong then some error message are shown which is flash messages as response.
+42. npm i connect-flash , you need express session for flash so npm i express-session. see comment 41 in flash messages folder flash- app.js.
+43. we can use flash message error in other routes too. see in code index.js
+44. mongodb intermediate go in that folder.
+45. 
+
