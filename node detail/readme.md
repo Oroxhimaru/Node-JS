@@ -46,6 +46,6 @@ to make website more usable and purposeful for the user e.g a front-end download
 41. after filling  the wrong info in Logiin form the req goes to backend server. and if the email pass is wrong then some error message are shown which is flash messages as response.
 42. npm i connect-flash , you need express session for flash so npm i express-session. see comment 41 in flash messages folder flash- app.js.
 43. we can use flash message error in other routes too. see in code index.js
-44. mongodb intermediate go in that folder.
+44. mongodb intermediate go in that folder. npm i mongoose , import mongoose in user.js , setup the mongoose, make schema make model, import model in index.js, 
 45. 
 
