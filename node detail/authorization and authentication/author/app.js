@@ -23,7 +23,7 @@ app.use(expressSession({  //for data holding and saving
 app.use(passport.initialize()); //initializiing passport
 app.use(passport.session());    //passport session is started for saviing and holding data
 passport.serializeUser(usersRouter.serializeUser());
-passport.deserializeUser(usersRouter.serializeUser());
+passport.deserializeUser(usersRouter.deserializeUser());
 
 
 app.use(logger('dev'));

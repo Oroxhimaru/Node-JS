@@ -26,7 +26,7 @@ router.post('/register', (req,res) => {
 
 
 router.get('/profile', isLoggedIn, function(req, res, next) {
-  res.send('WELCOME');
+  res.render('profile');
 });
 
 
