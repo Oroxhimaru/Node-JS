@@ -47,5 +47,8 @@ to make website more usable and purposeful for the user e.g a front-end download
 42. npm i connect-flash , you need express session for flash so npm i express-session. see comment 41 in flash messages folder flash- app.js.
 43. we can use flash message error in other routes too. see in code index.js
 44. mongodb intermediate go in that folder. npm i mongoose , import mongoose in user.js , setup the mongoose, make schema make model, import model in index.js, 
-45. 
+45. ^ means in RegExp start and $ means end. further detail see in above 44 point file.
+46. Authorization and Authentication folder. install these packages: npm i passport passport-local passport-local-mongoose mongoose express-session.
+47. app.js code first after view engine before logger. setup user.js properly. index.js try register first then other code.
+48.  
 
